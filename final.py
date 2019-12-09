@@ -28,7 +28,7 @@ while True:
   # Create the message
   # str() converts the value to a string so it can be concatenated
   message = "Good morning. Current Temperature is: " + str(t) + " Degree; Pressure is: " + str(p) + " kiloPascal; Humidity is: " + str(h)+" Percent. "
-  api = 'http://api.openweathermap.org/data/2.5/weather?q=Shanghai&units=metric&APPID=c20d1bdc106bdfdb1f13f9402c81cff1'
+  api = 'http://api.openweathermap.org/data/2.5/weather?q=Shanghai&units=metric&APPID=c2[*SECRET*]'
   x = requests.get(api).json()
   message2 = "Let's take a look at Shanghai's weather. The weather condition is "+str(x["weather"][0]["description"])+". Current temperature is "+str(x["main"]["temp"])+" degrees. The wind speed is "+str(x["wind"]["speed"])+" meters per second. Have a nice day!"
   print(x["main"]["temp"]) 
