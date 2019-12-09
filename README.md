@@ -8,7 +8,7 @@ The purpose of this project is to sense the environment using SenseHAT, and get 
 
 The SenseHAT has a 8*8 LED screen so we can display the information on the screen.
 
-Finally, thanks to `gtts` library in python, the Pi 4 running
+Finally, thanks to `gtts` library in python, the Pi 4 running the script will convert text message to audio and play it.
 
 ## Prerequisites
 
